@@ -10,21 +10,22 @@ body {
 }
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px 50px;
 }
 .header .logo {
-    font-size: 24px;
-    color: #f9faf8;
-    /*  */
+    font-family: trattatello;
+    font-size: 34px;
+    font-weight: bold;
+    color: #f9faf8; 
 }
 ul {
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    gap: 10px;
+    gap: 50px;
 }
 a {
     color: inherit;
@@ -34,6 +35,8 @@ a {
     display: flex;
     justify-content: center;
     padding: 40px;
+    padding-top: 120px;
+    gap: 50px;
 }
 .hero .left,
 .hero .right {
@@ -43,29 +46,37 @@ a {
     font-size: 48px;
     font-weight: 900;
     color: #f9faf8;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .hero .text,
 a {
     font-size: 18px;
     color: #e5e7eb;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+}
+a:hover {
+    color: #3882f6;
 }
 .hero button,
 .message button {
     background-color: #3882f6;
-    padding: 5px 20px;
+    padding: 10px 30px;
     color: white;
     border-radius: 10px;
     font-weight: bold;
     border: none;
 }
-.hero .right {
-    background-color: grey;
-    /*  */
+.hero img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+}
+button:hover {
+    background-color: blueviolet;
+    border: 2px solid cyan;
 }
 .information {
-    padding: 40px;
+    padding: 80px;
 }
 .information .title {
     display: flex;
@@ -73,7 +84,7 @@ a {
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 .cards {
     display: flex;
@@ -85,12 +96,19 @@ a {
     height: 150px;
     border: 2px solid cyan;
     border-radius: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+.card img:hover {
+    width: 170px;
+    height: 170px;
+    border: 4px solid blueviolet;
+    margin-bottom: 6px;
 }
 .card .text {
     width: 150px;
-    height: 150px;
     text-align: center;
+    font-size: 20px;
+    font-weight: bold;
 }
 .citation {
     display: flex;
@@ -104,8 +122,12 @@ a {
     font-style: italic;
     color: #1f2937;
     width: 60%;
+    padding-bottom: 50px;
 }
 .citation .author {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f2937;
     align-self: flex-end;
 }
 .message {
@@ -115,7 +137,7 @@ a {
     padding: 100px 180px;
 }
 .message .box {
-    background-color: rgb(59, 130, 246);
+    background-image: url("images/Basket.jpg");
     flex: 1;
     height: 150px;
     border-radius: 30px;
@@ -128,13 +150,15 @@ a {
     color: white;
 }
 .message .title {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 10px;
 }
+.message .text {
+    font-size: 20px;
+}
 .message button {
     align-self: flex-end;
-    border: 2px solid white;
 }
 .footer {
     display: flex;
