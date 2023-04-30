@@ -51,7 +51,8 @@ a {
     color: #e5e7eb;
     margin-bottom: 10px;
 }
-.hero button {
+.hero button,
+.message button {
     background-color: #3882f6;
     padding: 5px 20px;
     color: white;
@@ -61,6 +62,10 @@ a {
 }
 .hero .right {
     background-color: grey;
+    /*  */
+}
+.information {
+    padding: 40px;
 }
 .information .title {
     display: flex;
@@ -68,4 +73,73 @@ a {
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
+    margin-bottom: 40px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.card img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid cyan;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.card .text {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+.citation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 60px;
+}
+.citation .text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    width: 60%;
+}
+.citation .author {
+    align-self: flex-end;
+}
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 180px;
+}
+.message .box {
+    background-color: rgb(59, 130, 246);
+    flex: 1;
+    height: 150px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 30px 50px;
+}
+.message .left {
+    flex: auto;
+    color: white;
+}
+.message .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.message button {
+    align-self: flex-end;
+    border: 2px solid white;
+}
+.footer {
+    display: flex;
+    color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
